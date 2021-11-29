@@ -1,0 +1,11 @@
+You will need three consoles for development, though the end user will only be running one service
+
+Express terminal
+cd .\express-server\
+npm start
+
+React terminal
+npm start
+
+Electron terminal
+npm run electron-dev

@@ -1,0 +1,73 @@
+<style>
+   body {
+      overflow-x: hidden;
+   }
+
+   .center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -ms-transform: translateX(50%);
+      transform: translateX(50%);
+
+   }
+
+   .block {
+      display: block;
+      width: 100%;
+      border: #000000;
+      background-color: #04AA6D;
+      color: #FFFFFF;
+      padding: 7px 7px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      margin-top: 5;
+      margin-bottom: 5;
+   }
+</style>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+</head>
+
+
+
+<body>
+   <div class="">
+      <div>
+         <button class="block" type="button" id="freestyleBtn" onClick="newFreestyle()"> New Freestyle Project </button>
+      </div>
+      <div class="">
+         <button class="block" type="button" id="smallProjBtn" onClick="newSmallProject()"> New Small Project </button>
+      </div>
+      <div class="">
+         <button class="block" type="button" id="fullProjBtn" onClick="newFullProject()"> New Full Project </button>
+      </div>
+   </div>
+
+
+
+   <script>
+      const { ipcRenderer } = require('electron')
+
+      function newFreestyle() {
+         ipcRenderer.send("freestyleRequest");
+      };
+
+      function newSmallProject() {
+         ipcRenderer.send("simpleProjectRequest");
+      }
+
+      function newFullProject() {
+         ipcRenderer.send("fullProjectRequest");
+      }
+   </script>
+</body>
+
+</html>

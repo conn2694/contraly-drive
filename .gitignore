@@ -1,0 +1,13 @@
+user-microservice/target/
+user-microservice/pom.xml.tag
+user-microservice/pom.xml.releaseBackup
+user-microservice/pom.xml.versionsBackup
+user-microservice/pom.xml.next
+user-microservice/release.properties
+dependency-reduced-pom.xml
+user-microservice/buildNumber.properties
+user-microservice/.mvn/timing.properties
+# https://github.com/takari/maven-wrapper#usage-without-binary-jar
+user-microservice/.mvn/wrapper/maven-wrapper.jar
+.env
+.vscode
